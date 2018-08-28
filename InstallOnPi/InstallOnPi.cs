@@ -19,12 +19,13 @@ namespace InstallOnPi
     {
         private SshClient sshClient = null;
 
-        string configCommands = "sudo apt-get install libopus0 libasound2 libudev0 libavahi-client3 libcurl3 libevdev2 ; " +
-                             "echo 'deb http://archive.itimmer.nl/raspbian/moonlight OS main' | sudo tee -a  /etc/apt/sources.list && " +
-                             "wget http://archive.itimmer.nl/itimmer.gpg && " +
-                             "sudo apt-key add itimmer.gpg && " +
-                             "sudo apt-get update && " +
-                             "sudo apt-get install moonlight-embedded";
+        string configCommands = 
+            "sudo apt-get install libopus0 libasound2 libudev0 libavahi-client3 libcurl3 libevdev2 ; " +              
+            "echo 'deb http://archive.itimmer.nl/raspbian/moonlight OS main' | sudo tee -a  /etc/apt/sources.list && " + 
+            "wget http://archive.itimmer.nl/itimmer.gpg && " +  
+            "sudo apt-key add itimmer.gpg && " +  
+            "sudo apt-get update && " +    
+            "sudo apt-get install moonlight-embedded";
 
         public InstallOnPi()
         {
@@ -43,7 +44,8 @@ namespace InstallOnPi
                 SecureString devicePassword = new NetworkCredential("", textBox2.Text).SecurePassword;
                 if (deviceIp != null && deviceUsername != null && devicePassword != null)
                 {
-                    ConnectionInfo connectionInfo = new ConnectionInfo(deviceIp, deviceUsername, new PasswordAuthenticationMethod(deviceUsername, new NetworkCredential("", devicePassword).Password));
+                    ConnectionInfo connectionInfo = new ConnectionInfo(deviceIp, deviceUsername, 
+                        new PasswordAuthenticationMethod(deviceUsername, new NetworkCredential("", devicePassword).Password));
                     sshClient = new SshClient(connectionInfo);
                     sshClient.Connect();
                     if (sshClient.IsConnected == true)
