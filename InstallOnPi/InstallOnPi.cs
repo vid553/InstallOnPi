@@ -1,7 +1,7 @@
 ﻿/*
  * Install On Pi Application
  * 
- * Copyright (C) 2018 Vid Rajtmajer <vid.rajtmajer@gmail.com>
+ * Copyright (C) 2018 vid553 <vid.majster@gmail.com>
  * 
  * Icon made by geotatah from www.flaticon.com
  * Background photo by Juan from www.pexels.com
@@ -59,7 +59,7 @@ namespace InstallOnPi
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Napaka pri vzpostavitvi povezave z napravo.");
                 infoLabel.Text = "Ni povezave :(";
