@@ -17,4 +17,4 @@ It uses Moonlight embedded library: https://github.com/irtimmer/moonlight-embedd
 
 ## License
 Project is licensed under [GNU GENERAL PUBLIC LICENSE v3](http://www.gnu.org/licenses/gpl-3.0.en.html). \
-Uses icon made by Freepik from www.flaticon.com and background images from www.pexels.com
+Uses icon made by geotatah from www.flaticon.com and background photo made by Juan from www.pexels.com
