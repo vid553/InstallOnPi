@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>cargo_rir_icon.ico</ApplicationIcon>
+    <ApplicationIcon>InstallOnPi-icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
@@ -93,7 +93,7 @@
     <None Include="Resources\install-background1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cargo_rir_icon.ico" />
+    <Content Include="InstallOnPi-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

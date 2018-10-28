@@ -106,7 +106,7 @@ namespace InstallOnPi
                     sshClient.Disconnect();
                 }
                 sshClient.Dispose();
-                this.Dispose();
+                Dispose();
             }
         }
     }
