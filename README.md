@@ -1,7 +1,7 @@
 # InstallOnPi
 Program to install Moonlight on Raspberry Pi
 \
-InstallOnPi installs everything that [GameOnPi](https://github.com/vid553/GameOnPi) app needs, so the users can play their PC games on Raspberry Pi. \
+InstallOnPi installs everything on Rpi that [GameOnPi](https://github.com/vid553/GameOnPi) app needs, so the users can play their PC games on Raspberry Pi. \
 Made for Windows using .NET framework with [SSH.NET](https://github.com/sshnet/SSH.NET) library.  \
 Language of the app is Slovenian, will be translated to English soon. \
 It uses Moonlight embedded library: https://github.com/irtimmer/moonlight-embedded
